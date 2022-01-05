@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto numero 1</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <img src="./assets/img/modena.png" alt="">
+        <form>
+        <div class="entrada">
+            <input type="text" id="cantidad" placeholder="Cantidad de Dinero" required>
+        </div>
+        <div class="list uno">
+            <select name="monedas uno" id="de">
+                <option value="0">Elegir tu moneda</option>
+                <option value="1">Dolar</option>
+                <option value="2">Peso Mexicano</option>
+                <option value="3">Peso Colombiano</option>
+                <option value="4">Libra esterlina</option>
+                <option value="5">Euro</option>
+            </select>
+        </div>
+        <div class="list dos">
+            <select name="monedas dos" id="a">
+                <option value="0">Elegir tu moneda</option>
+                <option value="1">Dolar</option>
+                <option value="2">Peso Mexicano</option>
+                <option value="3">Peso Colombiano</option>
+                <option value="4">Libra esterlina</option>
+                <option value="5">Euro</option>
+            </select>
+        </div>
+        </form>
+        <div class="button">
+            <button type="submit" class="myButton" onclick="convertir()">Convertir</button>
+        </div>
+        <div class="resultado">
+            <h1 id="resultado"></h1>
+        </div>
+        <div class="err">
+            <h1 id="error"></h1>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
